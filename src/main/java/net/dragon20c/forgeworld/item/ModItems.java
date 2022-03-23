@@ -10,7 +10,10 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
     public static final Item MUD_STICK = registerItem("mud_stick",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroup.FORGECRAFT)));
+
+    public static final Item DIRT_BALL = registerItem("dirt_ball",
+            new Item(new FabricItemSettings().group(ModItemGroup.FORGECRAFT)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(ForgeWorld.MOD_ID,name),item);

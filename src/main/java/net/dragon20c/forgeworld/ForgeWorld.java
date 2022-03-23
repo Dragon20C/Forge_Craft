@@ -16,7 +16,9 @@ public class ForgeWorld implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
 	}
 }
