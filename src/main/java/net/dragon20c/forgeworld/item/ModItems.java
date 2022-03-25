@@ -15,6 +15,9 @@ public class ModItems {
     public static final Item DIRT_BALL = registerItem("dirt_ball",
             new Item(new FabricItemSettings().group(ModItemGroup.FORGECRAFT)));
 
+    public static final Item MUD_BALL = registerItem("mud_ball",
+            new Item(new FabricItemSettings().group(ModItemGroup.FORGECRAFT)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(ForgeWorld.MOD_ID,name),item);
     }

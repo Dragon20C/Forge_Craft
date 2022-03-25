@@ -15,7 +15,7 @@ import net.minecraft.util.registry.Registry;
 public class ModBlocks {
 
     public static final Block MUD_BLOCK = registerBlock("mud_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6f)), ModItemGroup.FORGECRAFT);
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).strength(0.6f)), ModItemGroup.FORGECRAFT);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
